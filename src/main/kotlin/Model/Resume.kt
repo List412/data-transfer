@@ -11,5 +11,5 @@ class Resume(id: EntityID<Int>) : IntEntity(id) {
 
     var name by Resumes.name
     var person by Person optionalReferencedOn Resumes.person
-    var jobs by Resume optionalReferencedOn JobsResume.job
+    var jobs by Job via JobsResume
 }

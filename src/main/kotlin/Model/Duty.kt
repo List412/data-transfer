@@ -9,5 +9,5 @@ import org.jetbrains.exposed.dao.IntEntityClass
 class Duty(id: EntityID<Int>) : IntEntity(id) {
     companion object : IntEntityClass<Duty>(Duties)
     var name by Duties.name
-    var job by Person referencedOn Duties.job
+    var job by Job referencedOn Duties.job
 }

@@ -17,6 +17,9 @@ dependencies {
     compile("org.jetbrains.exposed:exposed:0.11.2")
     compile("mysql:mysql-connector-java:5.1.46")
     compile("org.xerial:sqlite-jdbc:3.25.2")
+    compile("com.google.code.gson:gson:2.8.5")
+    compile("org.apache.poi:poi:3.17")
+    compile("org.apache.poi:poi-ooxml:3.17")
     compile(kotlin("script-runtime"))
 }
 

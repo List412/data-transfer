@@ -9,7 +9,7 @@ object Db {
         return@lazy conn
     }
     val db by lazy {
-        Database.connect("jdbc:mysql://localhost:3306/some_data", "com.mysql.jdbc.Driver",
+        Database.connect("jdbc:mysql://localhost:3306/some_data?sslMode=none&characterEncoding=utf-8", "com.mysql.jdbc.Driver",
         user = "root", password = ",bkb,ehlf")
     }
 }
